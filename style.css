@@ -1244,16 +1244,13 @@ input[type="text"]{
     .items{
         margin-right: auto;
         margin-left: auto;
-        width: 680px;
+        width: 650px;
         margin-top: -30px;
-        justify-content: flex-start;
     }
     
     .item{
         width: 304px;
         height: 402px;
-        margin-right: 15px;
-        margin-left: 15px;
     }
     
     .item>img{
@@ -1369,15 +1366,13 @@ input[type="text"]{
 
     .items{
         margin-top: -6px;
-        width: 540px;
+        width: 530px;
     }
 
     .item{
         margin-top: 10px;
         width: 255px;
         height: 420px;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     .item>img{
@@ -1646,8 +1641,10 @@ input[type="text"]{
     }
 
     .items{
+        margin-left: auto;
+        margin-right: auto;
         margin-top: -6px;
-        width: 460px;
+        width: 450px;
     }
 
     .item{
@@ -1911,16 +1908,13 @@ input[type="text"]{
         margin-left: auto;
         margin-right: auto;
         margin-top: -6px;
-        justify-content: flex-start;
-        width: 390px;
+        width: 360px;
     }
 
     .item{
         margin-top: 10px;
         width: 170px;
         height: 329px;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     .item>img{
@@ -2012,16 +2006,13 @@ input[type="text"]{
         margin-left: auto;
         margin-right: auto;
         margin-top: -6px;
-        justify-content: flex-start;
-        width: 320px;
+        width: 290px;
     }
 
     .item{
         margin-top: 10px;
         width: 135px;
         height: 260px;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     .item>img{
