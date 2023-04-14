@@ -1908,6 +1908,10 @@ input[type="text"]{
     }
 
     .items{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -6px;
+        justify-content: flex-start;
         width: 370px;
     }
 
@@ -1915,6 +1919,8 @@ input[type="text"]{
         margin-top: 10px;
         width: 170px;
         height: 329px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .item>img{
@@ -2003,6 +2009,10 @@ input[type="text"]{
 
 @media (max-width: 385px){
     .items{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -6px;
+        justify-content: flex-start;
         width: 300px;
     }
 
@@ -2010,6 +2020,8 @@ input[type="text"]{
         margin-top: 10px;
         width: 135px;
         height: 260px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .item>img{
