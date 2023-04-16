@@ -587,12 +587,24 @@ input[type="text"]{
 }
 
 /* Info ----------------------------------------------------------------------------------------------------------------------------- */
-.navigation{
-    margin-left: 30px;
+.info-main{
     margin-top: 130px;
 }
 
-.navigation span{
+.info-main>.main-info{
+    display: none;
+}
+
+.navigation{
+    /* margin-left: 30px; */
+    width: 568px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.navigation p{
     font-size: 24px;
     font-weight: 500;
 }
@@ -603,11 +615,7 @@ input[type="text"]{
     font-weight: 600;
 }
 
-.navigation .characteristics, .navigation .feedbacks{
-    margin-left: 50px;
-}
-
-.image{
+.images-info{
     display: flex;
     flex-direction: row;
     margin-top: 60px;
@@ -647,25 +655,29 @@ input[type="text"]{
     margin-left: 20px;
 }
 
-.item-main-info{
+.main-info-buy{
     margin-left: 112px;
 }
 
-.item-main-info h1{
+.main-info h1{
     font-size: 40px;
     font-weight: 700px;
 }
 
-.item-main-info .star{
+.main-info .star{
     font-size: 28px;
     color: #FF9900;
 }
 
-.item-main-info .available{
+.main-info .available{
     font-size: 18px;
     font-weight: 500;
     color: #46733F;
     margin-left: 20px;
+}
+
+.info-main>.price-buy{
+    display: none;
 }
 
 .price-buy{
@@ -719,7 +731,7 @@ input[type="text"]{
     font-weight: 500;
 }
 
-.characteristics{
+.info-main>.characteristics{
     margin-top: 60px;
     margin-left: 30px;
     width: 690px;
@@ -728,31 +740,26 @@ input[type="text"]{
 .characteristics-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.characteristics h2{
+.info-main>.characteristics h2{
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.characteristics p{
+.characteristics-content p{
     font-size: 24px;
     font-weight: 500;
 }
 
-.characteristics-content .keys{
-    width: 221px;
-}
-
-.characteristics-content .values{
-    width: 280px;
-    margin-left: 186px;
-}
-
 .similars{
     margin-top: 60px;
-    margin-left: 30px;
+    width: 100%;
+     padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
 }
 
 .similars h2{
@@ -764,10 +771,12 @@ input[type="text"]{
 .similars-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: fit-content;
 }
 
 .similars-content>img{
+    display: block;
     margin-top: 30px;
     margin-bottom: auto;
 }
@@ -779,7 +788,6 @@ input[type="text"]{
     height: 150px;
     border: 2px solid #46733F;
     border-radius: 50px;
-    margin-left: 10px;
 }
 
 .similars-item img{
@@ -802,10 +810,6 @@ input[type="text"]{
 
 .item-price{
     margin-top: 23px;
-}
-
-#right-arrow{
-    margin-left: 10px;
 }
 
 /* 1440px -------------------------------------------------------------------------------------------------------------------------- */
@@ -1998,6 +2002,187 @@ input[type="text"]{
     .pages-navigation .first-page{
         margin-left: 0;
         border: 2px solid #46733F;
+    }
+
+    /* info ------------------------ */
+    .info-main>.main-info, .info-main>.price-buy{
+        display: block;
+    }
+
+    .info-main>.main-info{
+        margin-left: 10px;
+    }
+
+    .info-main>.main-info h1{
+        font-size: 24px;
+    }
+
+    .info-main>.main-info div{
+        margin-top: 10px;
+    }
+
+    .info-main>.main-info .star{
+        /* font-size: 18px; */
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .info-main>.main-info .available{
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 30px;
+        margin-top: 8px;
+    }
+
+    .info-main{
+        margin-top: 60px;
+    }
+
+    .navigation{
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .navigation p{
+        font-size: 16px;
+    }
+
+    .images-info{
+        margin: 0;
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .images{
+        background-color: #F7F5F5;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .big-image{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .images>.arrow{
+        display: none;
+    }
+
+    .images>.small-images{
+        display: none;
+    }
+
+    .main-info-buy{
+        display: none;
+    }
+
+    .info-main>.price-buy{
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-main>.price-buy h2{
+        font-size: 24px;
+    }
+
+    .info-main>.description{
+        box-sizing: border-box;
+        margin-left: 0;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .info-main>.description h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .info-main>.description p{
+        font-size: 16px;
+    }
+
+    .info-main>.characteristics{
+        box-sizing: border-box;
+        margin-left: 0;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .info-main>.characteristics h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .characteristics-content p{
+        font-size: 16px;
+    }
+
+    .similars{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .similars h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .similars-content{
+        overflow-x: scroll;
+    }
+
+    .similars-content>img{
+        display: none;
+    }
+
+    .similars-item{
+        height: 80px;
+        width: 260px;
+        margin-right: 10px;
+    }
+    
+    .similars-item img{
+        height: 70px;
+        width: 70px;
+        margin-top: 5px;
+        margin-left: 23px;
+    }
+    
+    .similars-item .item-info{
+        width: 130px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    
+    .similars-item .item-info p{
+        height: 30px;
+        overflow: hidden;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .item-price{
+        margin-top: 10px;
     }
 }
 
